@@ -1,8 +1,25 @@
 # MacPorts
 
-Available packages - https://ports.macports.org/
+Guide - https://guide.macports.org/#using
+
+Available packages (ports) - https://ports.macports.org/
 
 ## How-to
+
+Install port, e.g `python`:
+```bash
+sudo port install python312
+```
+
+List different versions, e.g `python3`:
+```bash
+port select --list python3
+```
+
+Select default version:
+```bash
+sudo port select --set python3 python312
+```
 
 Show all installed packages with dependencies:
 ```bash
@@ -32,7 +49,6 @@ sudo port uninstall inactive
 sudo port uninstall leaves
 ```
 
-
-https://guide.macports.org/#using
-
 https://apple.stackexchange.com/questions/10149/how-to-remove-unused-macports-packages
+
+https://stackoverflow.com/questions/6612009/macports-port-select-commands
