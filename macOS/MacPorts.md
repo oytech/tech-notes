@@ -4,6 +4,12 @@ Guide - https://guide.macports.org/#using
 
 Available packages (ports) - https://ports.macports.org/
 
+Package tree repo - https://github.com/macports/macports-ports
+
+There is no gui - https://trac.macports.org/ticket/40455
+
+Developers - https://trac.macports.org/wiki/MacPortsDevelopers
+
 ## How-to
 
 Install port, e.g `python`:
@@ -29,6 +35,16 @@ port installed
 Show only directly installed (without dependencies):
 ```bash
 port installed requested
+```
+
+Show latest versions (active) of directly installed:
+```bash
+port installed requested and active
+```
+
+Find ports without maintainer:
+```bash
+port search --line --maintainer nomaintainer
 ```
 
 Update ports tree, upgrade macports itself and then upgrade packages to newest versions:
